@@ -1,11 +1,12 @@
 import os
 
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '76v6rffghc(9eaurc^w4hwy-@*hb%35wl0yndvo1qw3c!4%m1q'
 
-DEBUG = True
-# ALLOWED_HOSTS = ['gyru.co.uk','www.gyru.co.uk']
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['gyru.co.uk','www.gyru.co.uk','138.68.150.44']
+# ALLOWED_HOSTS = []
 
 # Application definition
 

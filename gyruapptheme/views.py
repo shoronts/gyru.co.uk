@@ -13,15 +13,6 @@ class IndexView(TemplateView):
     def about(request):
         return render(request, 'about.html')
 
-    def freeLesson(request):
-        if request.method == 'POST':
-            Message = request.POST['mail']
-            send_mail('Signup message from gyru.co.uk', Message, 'admin@gyru.co.uk', ['gyruapp@gmail.com'], fail_silently=False,)
-            messages.info(request, 'Thank you! We will contact you soon.')
-            return redirect('freelesson')
-        else:
-            return render(request, 'freelesson.html')
-
     def contact(request):
         if request.method == 'POST':
             full_name = request.POST['name']

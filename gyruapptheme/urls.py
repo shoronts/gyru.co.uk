@@ -5,7 +5,6 @@ from gyruapptheme.views import IndexView as theme
 urlpatterns = [
     path('', theme.home, name='home'),
     path('about/', theme.about, name='about'),
-    path('free-lesson/', theme.freeLesson, name='freelesson'),
     path('contact/', theme.contact, name='contact'),
     path('privacy-policy/', theme.policy, name='policy'),
 ]

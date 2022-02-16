@@ -39,10 +39,6 @@
                             <a class="menu-link {% if request.resolver_match.url_name == 'about' %} active {% endif %}" href="{% url 'about' %}">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="menu-link {% if request.resolver_match.url_name == 'freelesson' %} active {% endif %}" href="{% url 'freelesson' %}">
-                                FREE LESSON</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="menu-link {% if request.resolver_match.url_name == 'contact' %} active {% endif %}" href="{% url 'contact' %}">Contact</a>
                         </li>
                     </ul>
